@@ -4,4 +4,14 @@ version = "0.1.0"
 edition = "2024"
 
 [dependencies]
+argh = "0.1.13"
 qrcode_scanner = "0.3.2"
+serde = { version = "1.0.219", features = ["serde_derive", "derive"] }
+zbus = "5.7.1"
+
+[dependencies.uuid]
+version = "1.17.0"
+# Lets you generate random UUIDs
+features = [
+    "v4",
+]
