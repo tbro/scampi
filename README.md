@@ -1,5 +1,5 @@
 # scampi
-*scampi* is a simple tool for linux that allows you to use your web-cam to scan
+*scampi* is a simple tool for Linux that allows you to use your web-cam to scan
 QR codes. It can add WiFi connections encoded as QR codes directly to
 [NetworkManager](https://www.networkmanager.dev/).
 

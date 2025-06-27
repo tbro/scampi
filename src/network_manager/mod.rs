@@ -9,11 +9,11 @@ use serde::{Deserialize, Serialize};
 use settings::SettingsProxyBlocking;
 use std::collections::HashMap;
 use uuid::Uuid;
+use zbus::zvariant::{SerializeDict, Type};
 use zbus::{
     blocking::Connection,
     zvariant::{ObjectPath, OwnedObjectPath},
 };
-use zbus::zvariant::{SerializeDict, Type};
 
 /// Wrapper for known error cases.
 #[derive(Debug, PartialEq)]
@@ -246,6 +246,7 @@ mod tests {
     }
 
     #[test]
+    #[ignore] // doesn't work on CI
     fn test_connection() {
         let qr_str = "WIFI:S:XXX-test-ssid;T:WPA;P:00000000000000000;H:false;;";
         let settings = ConectionSettings::try_from(qr_str).unwrap();
@@ -262,6 +263,7 @@ mod tests {
     }
 
     #[test]
+    #[ignore] // doesn't work on CI
     fn test_get_device_by_iface() {
         let nm = NetworkManagerConnection::new();
         let _err = nm.get_device_by_iface("blah0").unwrap_err();
