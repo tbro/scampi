@@ -5,10 +5,6 @@ QR codes. It can add WiFi connections encoded as QR codes directly to
 
 The name *desugars* to something like **s**can **cam** wi**f**i.
 
-Adds a network connection to [NetworkManager](https://www.networkmanager.dev/)
-from scanned QR code. It uses the attached webcam to scan the QR code, and
-passes the configuration to network manager via DBUS.
-
 By default it only prints out the scanned data. Provide `-w` option to add the
 connection to `NetworkManager`.
 
