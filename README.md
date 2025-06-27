@@ -5,10 +5,13 @@ QR codes. It can add WiFi connections encoded as QR codes directly to
 
 The name *desugars* to something like **s**can **cam** wi**f**i.
 
+> [!NOTE]
+> If your intereted in [hacking network-manager with zbus](https://tbro.github.io/posts/2025-06-27-network-manager-and-zbus.html).
+
+## Usage
 By default it only prints out the scanned data. Provide `-w` option to add the
 connection to `NetworkManager`.
 
-## Usage
 To print the decoded QR code:
 
 	cargo run
