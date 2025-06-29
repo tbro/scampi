@@ -30,7 +30,7 @@ fn default_retries() -> u16 {
 fn main() {
     let options: Options = argh::from_env();
     if let Some(res) = scan(options.retries, options.video_device) {
-        println!("{:#?}", res);
+        println!("{res:#?}");
 
         if options.wifi {
             // TODO validate interface against known interfaces (dbus)
